@@ -14,6 +14,7 @@ struct __WatchTaskAppApp: App {
             NavigationView {
                 ContentView()
             }
+            .environment(\.managedObjectContext, PersistentController.shared.container.viewContext)
         }
 
         WKNotificationScene(controller: NotificationController.self, category: "myCategory")

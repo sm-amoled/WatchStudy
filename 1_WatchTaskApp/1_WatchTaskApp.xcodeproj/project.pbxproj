@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3411D06A289A84ED0093822B /* FolderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3411D069289A84ED0093822B /* FolderView.swift */; };
+		3411D06C289A947A0093822B /* AddNewFolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3411D06B289A947A0093822B /* AddNewFolder.swift */; };
+		3411D06E289AAA1B0093822B /* TodoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3411D06D289AAA1B0093822B /* TodoListView.swift */; };
+		3411D070289AB1E40093822B /* AddNewTodo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3411D06F289AB1E40093822B /* AddNewTodo.swift */; };
 		34CF98372895BE02009D70A6 /* 1_WatchTaskApp WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 34CF98362895BE02009D70A6 /* 1_WatchTaskApp WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		34CF983C2895BE03009D70A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34CF983B2895BE03009D70A6 /* Assets.xcassets */; };
 		34CF98422895BE03009D70A6 /* 1_WatchTaskApp WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 34CF98412895BE03009D70A6 /* 1_WatchTaskApp WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -17,6 +21,8 @@
 		34CF984F2895BE03009D70A6 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34CF984E2895BE03009D70A6 /* ComplicationController.swift */; };
 		34CF98512895BE03009D70A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34CF98502895BE03009D70A6 /* Assets.xcassets */; };
 		34CF98542895BE03009D70A6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34CF98532895BE03009D70A6 /* Preview Assets.xcassets */; };
+		34CF986A289666C3009D70A6 /* doit.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 34CF9868289666C3009D70A6 /* doit.xcdatamodeld */; };
+		34E177FB2896DA18001D0D2B /* PersistentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E177FA2896DA18001D0D2B /* PersistentController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +68,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3411D069289A84ED0093822B /* FolderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolderView.swift; sourceTree = "<group>"; };
+		3411D06B289A947A0093822B /* AddNewFolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewFolder.swift; sourceTree = "<group>"; };
+		3411D06D289AAA1B0093822B /* TodoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListView.swift; sourceTree = "<group>"; };
+		3411D06F289AB1E40093822B /* AddNewTodo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewTodo.swift; sourceTree = "<group>"; };
 		34CF98322895BE02009D70A6 /* 1_WatchTaskApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 1_WatchTaskApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		34CF98362895BE02009D70A6 /* 1_WatchTaskApp WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "1_WatchTaskApp WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		34CF983B2895BE03009D70A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -75,6 +85,8 @@
 		34CF98532895BE03009D70A6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		34CF98552895BE03009D70A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		34CF98562895BE03009D70A6 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		34CF9869289666C3009D70A6 /* doit.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = doit.xcdatamodel; sourceTree = "<group>"; };
+		34E177FA2896DA18001D0D2B /* PersistentController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistentController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +130,8 @@
 		34CF98452895BE03009D70A6 /* 1_WatchTaskApp WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				34CF986528965D7C009D70A6 /* DB */,
+				34CF986428965C3C009D70A6 /* Views */,
 				34CF98462895BE03009D70A6 /* __WatchTaskAppApp.swift */,
 				34CF98482895BE03009D70A6 /* ContentView.swift */,
 				34CF984A2895BE03009D70A6 /* NotificationController.swift */,
@@ -137,6 +151,42 @@
 				34CF98532895BE03009D70A6 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		34CF986428965C3C009D70A6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				34CF986728965DB7009D70A6 /* FolderView */,
+				34CF986628965DB4009D70A6 /* TodoView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		34CF986528965D7C009D70A6 /* DB */ = {
+			isa = PBXGroup;
+			children = (
+				34CF9868289666C3009D70A6 /* doit.xcdatamodeld */,
+				34E177FA2896DA18001D0D2B /* PersistentController.swift */,
+			);
+			path = DB;
+			sourceTree = "<group>";
+		};
+		34CF986628965DB4009D70A6 /* TodoView */ = {
+			isa = PBXGroup;
+			children = (
+				3411D06D289AAA1B0093822B /* TodoListView.swift */,
+				3411D06F289AB1E40093822B /* AddNewTodo.swift */,
+			);
+			path = TodoView;
+			sourceTree = "<group>";
+		};
+		34CF986728965DB7009D70A6 /* FolderView */ = {
+			isa = PBXGroup;
+			children = (
+				3411D069289A84ED0093822B /* FolderView.swift */,
+				3411D06B289A947A0093822B /* AddNewFolder.swift */,
+			);
+			path = FolderView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,8 +317,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				34CF984B2895BE03009D70A6 /* NotificationController.swift in Sources */,
+				34E177FB2896DA18001D0D2B /* PersistentController.swift in Sources */,
+				3411D070289AB1E40093822B /* AddNewTodo.swift in Sources */,
+				3411D06A289A84ED0093822B /* FolderView.swift in Sources */,
+				3411D06C289A947A0093822B /* AddNewFolder.swift in Sources */,
+				3411D06E289AAA1B0093822B /* TodoListView.swift in Sources */,
 				34CF98492895BE03009D70A6 /* ContentView.swift in Sources */,
 				34CF984F2895BE03009D70A6 /* ComplicationController.swift in Sources */,
+				34CF986A289666C3009D70A6 /* doit.xcdatamodeld in Sources */,
 				34CF98472895BE03009D70A6 /* __WatchTaskAppApp.swift in Sources */,
 				34CF984D2895BE03009D70A6 /* NotificationView.swift in Sources */,
 			);
@@ -582,6 +638,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		34CF9868289666C3009D70A6 /* doit.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				34CF9869289666C3009D70A6 /* doit.xcdatamodel */,
+			);
+			currentVersion = 34CF9869289666C3009D70A6 /* doit.xcdatamodel */;
+			path = doit.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 34CF982C2895BE02009D70A6 /* Project object */;
 }
