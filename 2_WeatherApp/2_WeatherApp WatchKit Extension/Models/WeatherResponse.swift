@@ -8,5 +8,5 @@
 import Foundation
 
 struct WeatherResponse: Codable {
-    var forcase: [WeatherModel]
+    var forecast: [WeatherModel]
 }

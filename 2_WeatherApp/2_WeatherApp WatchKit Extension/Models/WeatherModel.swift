@@ -12,6 +12,7 @@ struct WeatherModel: Codable {
     var temperature: Double
     var unit: String
     var description: String
+    
     var conditions: String {
         switch description {
         case let str where str.lowercased().contains("clear"):
